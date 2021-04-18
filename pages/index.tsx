@@ -1,13 +1,28 @@
-import Head from 'next/head'
-import styles from '../styles/Home.module.css'
+import Head from 'next/head';
+import styles from '../src/styles/Home.module.css';
+// import styled, { createGlobalStyle } from 'styled-components';
 
-export default function Home() {
+// const GlobalStyle = createGlobalStyle`
+//   h1 {
+//     font-size: 4rem;
+//   }
+// `;
+// const Container = styled.div`
+//   text-align: center;
+// `;
+
+const Home = () => {
   return (
     <div className={styles.container}>
       <Head>
         <title>Create Next App</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
+
+      {/* <Container>
+        <GlobalStyle />
+        <h1>Hello, World!</h1>
+      </Container> */}
 
       <main className={styles.main}>
         <h1 className={styles.title}>
@@ -54,5 +69,7 @@ export default function Home() {
         </a>
       </footer>
     </div>
-  )
-}
+  );
+};
+
+export default Home;
